@@ -1,0 +1,7 @@
+Options -Indexes
+ServerSignature Off
+
+<FilesMatch "(^\.|\.env|composer\.(json|lock)|package(-lock)?\.json)$">
+    Require all denied
+</FilesMatch>
+

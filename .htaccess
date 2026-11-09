@@ -1,0 +1,7 @@
+Options -Indexes
+ServerSignature Off
+
+<FilesMatch "^\.env($|\.)">
+    Require all denied
+</FilesMatch>
+

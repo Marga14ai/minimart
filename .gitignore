@@ -1,0 +1,6 @@
+/.env
+/database/.env.connect
+/database/.env.mail
+/storage/sessions/sess_*
+/.tmp-*
+

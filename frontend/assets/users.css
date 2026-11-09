@@ -1,0 +1,16 @@
+.user-name-input {
+    width: min(100%, 280px);
+    border: 1px solid #dce3df;
+    border-radius: 8px;
+    padding: 9px 10px;
+    color: #435249;
+    font: inherit;
+    outline: none;
+}
+
+.user-name-input:focus {
+    border-color: #5b9c77;
+    box-shadow: 0 0 0 3px #e8f4ed;
+}
+
+.user-save { white-space: nowrap; }

@@ -1,0 +1,82 @@
+.report-builder { padding: 18px; }
+.report-form { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1.5fr auto; gap: 12px; align-items: end; }
+.report-form label { color: #596960; font-size: 11px; font-weight: 700; }
+.report-form input, .report-form select { display: block; width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #dce3df; border-radius: 8px; background: #fff; font: 13px 'DM Sans', sans-serif; }
+@media (max-width: 900px) { .report-form { grid-template-columns: 1fr 1fr; } }
+.report-metrics { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 20px 18px; }
+.report-metrics > div { min-width: 160px; padding: 12px 14px; border: 1px solid #dfe8e3; border-radius: 9px; background: #f2f8f4; }
+.report-metrics span, .report-metrics strong { display: block; }
+.report-metrics span { margin-bottom: 5px; color: #718078; font-size: 10px; text-transform: uppercase; }
+.report-metrics strong { color: #176b42; font: 800 18px Manrope, sans-serif; }
+.report-totals-footer { justify-content: flex-end; padding-top: 18px; border-top: 1px solid #e4e9e6; }
+@page {
+    size: landscape;
+    margin: 12mm;
+}
+
+@media print {
+    html, body {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff !important;
+    }
+
+    .sidebar,
+    header,
+    .section-tools,
+    .report-builder,
+    .report-history {
+        display: none !important;
+    }
+
+    main {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .page {
+        display: none !important;
+    }
+
+    #reports,
+    .report-output {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+    }
+
+    .report-output .table-wrap {
+        width: 100% !important;
+        overflow: visible !important;
+    }
+
+    .report-output table {
+        width: 100% !important;
+        table-layout: fixed;
+        font-size: 10px;
+    }
+
+    .report-output th,
+    .report-output td {
+        padding: 8px 7px !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .report-output tr {
+        break-inside: avoid;
+    }
+
+    .report-output .panel-head {
+        padding: 0 0 12px !important;
+    }
+
+    .report-metrics { padding: 0 0 12px !important; }
+}

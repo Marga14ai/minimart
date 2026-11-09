@@ -1,0 +1,52 @@
+.password-field {
+    display: block;
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 48px;
+}
+
+.login-card .remember-login { display:flex; align-items:center; gap:9px; cursor:pointer; }
+.login-card .remember-login input { width:17px; height:17px; margin:0; accent-color:#1b754a; }
+.login-card .remember-login span { color:#536159; font-size:12px; }
+
+.password-field button {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #718078;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.password-field button:hover,
+.password-field button:focus-visible {
+    background: #eef6f1;
+    color: #1b754a;
+    outline: none;
+}
+
+.password-field svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.password-field button.showing::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+}

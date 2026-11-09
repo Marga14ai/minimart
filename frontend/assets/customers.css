@@ -1,0 +1,21 @@
+.debt-history { margin-top: 18px; border-top: 1px solid #e4e9e6; padding-top: 16px; }
+.debt-history-head { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.debt-history-head strong { font: 700 13px Manrope, sans-serif; }
+.debt-history-head span { color: #7c8a82; font-size: 11px; }
+.debt-history-list { display: grid; gap: 8px; max-height: 210px; overflow: auto; }
+.history-payment { display: flex; justify-content: space-between; gap: 16px; padding: 11px 12px; background: #f6f9f7; border: 1px solid #e2e9e5; border-radius: 9px; }
+.history-payment > div:last-child { text-align: right; }
+.history-payment strong, .history-payment span, .history-payment small { display: block; }
+.history-payment strong { color: #176b42; }
+.history-payment span { color: #53645a; font-size: 11px; }
+.history-payment .history-dates { min-width: 180px; }
+.history-payment .history-dates span + span { margin-top: 3px; }
+.history-payment .history-dates b { color: #263a2f; font-weight: 700; }
+.history-payment small { color: #849087; font-size: 10px; margin-top: 3px; }
+.empty-history { padding: 22px; text-align: center; color: #829087; border: 1px dashed #d9e2dd; border-radius: 9px; }
+#record-debt-payment:disabled { background: #aab5af; box-shadow: none; cursor: not-allowed; }
+.customer-card.customer-overdue { border-color: #efb0b0; background: #fffafa; }
+.overdue-label { color: #c73f3f !important; font-weight: 700; white-space: nowrap; }
+.due-label { color: #7b8981 !important; white-space: nowrap; }
+.debt-summary .overdue-text { color: #c73f3f; font-size: 14px; }
+@media (max-width: 520px) { .history-payment { display: block; } .history-payment > div:last-child { text-align: left; margin-top: 8px; } }
